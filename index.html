@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Prueba Mauri</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a class="navegacion__enlace" href="presentacion">
+                <h2 class="navegacion__titulo">Hola Mundo!</h2>
+            </a>
+            <ul class="enlaces">
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#presentacion">Inicio</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#sobre-mi">Sobre mi</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+     <!-- repaso de la estructura del header y explicacion de los enlaces -->
+
+    <!-- explicacion: A continuacion incluiremos la etiqueta main -->
+    <main class="principal">
+        <!-- explicacion: dentro de esta etiqueta agregaremos las diferentes secciones de nuestra página -->
+  
+        <!-- explicacion: Comenzaremos incluyendo una vista de presentacion -->
+        <section class="presentacion" id="presentacion">
+          <div class="presentacion__contenedor_info">
+            <h1 class="presentacion__titulo">Mauricio Emanuel Verón</h1>
+            <p class="presentacion__parrafo">
+              Primer Web Prueba del informatorio.
+            </p>
+            <div class="presentacion__contenedor_botones">
+              <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
+              <a
+                href="./assets/docs/CV_MV.pdf"
+                target="_blank"
+                class="boton boton_oscuro"
+                role="button"
+                >Descargar CV</a
+              >
+            </div>
+          </div>
+        </section>
+        <!-- repaso de las partes de la seccion -->
+  
+        <!-- explicacion: Ahora agregaremos una seccion donde nos explayaremos 
+          sobre nuestra historia personal, para ello escribiremos lo siguiente -->
+        <article class="articulo sobre_mi" id="sobre-mi">
+          <h2 class="articulo__titulo">Un poco sobre mi</h2>
+          <div class="articulo__contenedor_descripciones">
+            <section class="seccion_descripcion">
+              <div class="seccion_descripcion__porta_retrato">
+                <img
+                  class="seccion_descripcion__imagen"
+                  src="./assets/images/profile/Mauri3.jpg"
+                  alt="foto trabajando en la oficina"
+                  title="trabajando en la oficina"
+                />
+              </div>
+              <div
+                class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                aria-label="descripcion personal"
+              >
+                <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                  Mi historia
+                </h3>
+                <p
+                  class="seccion_descripcion__parrafo"
+                  aria-label="Detalles de mi historia"
+                  aria-describedby="mi_historia_titulo"
+                >
+                  Desde niño siempre me interesó la ciencia, al terminar la secundaria intenté seguir la licenciatura en Química, no tuve buenas experiencias. Comencé a trabajar en diversos rubros, locales comerciales, call centers, hasta lograr ser parte del personal civil de nuestra Policía. Encargado junto a más compañeros de las redes sociales de del Departamento 911 y sus respectivas Divisiones. Casado y con una familia sana y trabajadora me impulsaron a seguir este nuevo camino en la programación.
+                </p>
+               </div>
+            </section>
+            <!-- explicacion: seguidamente tendremos una seccion muy similar a la anterior 
+              pero cambiaremos el orden de los elementos dejando la imagen al final -->
+            <section class="seccion_descripcion">
+              <div
+                class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                aria-label="descripcion personal"
+              >
+                <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                  Mis hobbies
+                </h3>
+                <p
+                  class="seccion_descripcion__parrafo"
+                  aria-label="Detalles de mis hobbies"
+                  aria-describedby="mis_hobbies_titulo"
+                >
+                  Hace un tiempo decidí vencer un poco la vergüenza y me abrí un canal en YouTube llamado "Mauri Groove" en donde basicamente trato de reaccionar a videos randoms/graciosos poniendo un poco de mi ingenio. Así tambien mejoro la edición de los videos. Entre mis otros pasatiempos se encuentran tomar fotografías y si así me diera el tiempo, jugar a videojuegos.
+                </p>
+              </div>
+              <div class="seccion_descripcion__porta_retrato">
+                <img
+                  class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
+                  src="./assets/images/profile/Mauri2.jpg"
+                  alt="foto mientras me encontraba en una reunion de trabajo"
+                  title="selfie en una reunion"
+                />
+              </div>
+            </section>
+          </div>
+        </article>
+        <!-- repaso article sobre mi y su estructura -->
+  
+        <!-- explicacion: En la seccion que sigue agregaremos los proyectos en los que trabajaron,
+        no se preocupen si todavia no cuentan con ninguno, en el momento que comiencen a construirlos 
+        podran ir actualizando la informacion de esta seccion -->
+        <article class="articulo proyectos" id="proyectos">
+          <h2 class="articulo__titulo">Mis proyectos</h2>
+          <div class="contenedor_tarjetas_grid">
+            <article
+              class="tarjeta"
+              aria-label="presentacion de proyecto personal"
+            >
+              <img
+                class="tarjeta__imagen"
+                src="./assets/images/proyectos/Mauri4.jpg"
+                alt="imagen del proyecto"
+                title="proyecto 1"
+              />
+              <div class="tarjeta__contenido">
+                <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Primer Proyecto</h3>
+                <span class="tarjeta__divisor"></span>
+                <p
+                  class="tarjeta__parrafo scroll scroll_fino"
+                  aria-label="descripcion de proyecto personal"
+                  aria-describedby="titulo_proyecto_1"
+                >
+                  Este es un desarrollo web gracias al informatorio, espero poder seguir experimentando y creciendo junto a proyectos laborales parelelos a mi otro empleo actual.
+                </p>
+                <a href="#" class="boton boton_oscuro" target="_blank"
+                  >Ver proyecto</a
+                >
+          </div>
+            </article>
+            <!-- explicacion: pueden agregar tantas tarjetas como deseen, para ejemplificar agregaremos seis. 
+              Podemos hacerlo simplemente copiando y pegando. Yo en mi caso en algunas tarjetas agregare un pequeño cambio a los botones  -->
+            
+        <!-- repaso del articulo proyectos -->
+      </main>
+      <!-- repaso de todo lo incluido en la etiqueta main -->
+  
+      <!-- Por ultimo deben agregar la etiqueta footer. 
+        En esta aparecera nuestra informacion de contacto y 
+        también inluiremos enlaces de navegacion y derechos. -->
+      <footer class="pie_de_pagina" role="contentinfo">
+        <!-- explicacion: la primer columna sera para nuestras redes,
+          cabe aclarar que la estructura sera similar en todos los casos y solo habrá pequeños cambios -->
+        <div class="pie_de_pagina__columna">
+          <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+          <ul class="enlaces enlaces_redes">
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="https://github.com/Mauridev1"
+                target="_blank"
+                ><img
+                  class="enlaces__icono"
+                  src="./assets/images/logos/github-logo.png"
+                  alt="logo de github"
+                  title="github"
+              /></a>
+            </li>
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="https://www.instagram.com/mauriveron.91/"
+                target="_blank"
+              >
+                <img
+                  class="enlaces__icono"
+                  src="./assets/images/logos/ig-logo.png"
+                  alt="logo de instagram"
+                  title="instagram"
+                />
+              </a>
+            </li>
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="https://www.youtube.com/channel/UC1RVeCNOwBOolKRxztzTyag"
+                target="_blank"
+                ><img
+                  class="enlaces__icono"
+                  src="./assets/images/logos/logo-YT.png"
+                  alt="logo de X"
+                  title="X"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- explicacion: la segunda columna sera para nuestros medios de contacto  -->
+        <div class="pie_de_pagina__columna">
+          <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+          <ul class="enlaces enlaces_vertical">
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="mailto: mail@mail.com"
+                target="_blank"
+                >Mail: maurykorn@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- explicacion: la ultima columna sera para los enlaces de navegacion -->
+        <div class="pie_de_pagina__columna" role="navigation">
+          <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+          <ul class="enlaces enlaces_vertical">
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="#presentacion"
+                >Inicio</a
+              >
+            </li>
+            <li class="enlaces__item">
+              <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+                >Sobre mi</a
+              >
+            </li>
+            <li class="enlaces__item">
+              <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+                >Proyectos</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- por ultimo los derechos de la pagina -->
+        <div class="pie_de_pagina__copyright">
+          <p>©️Copyright 2024</p>
+        </div>
+      </footer>
+      <!-- repaso de los elementos en el footer -->
+</body>
+</html>
